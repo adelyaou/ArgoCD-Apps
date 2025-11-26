@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: employee-stag
+  namespace: argocd
+spec:
+  project: adel-project
+  source:
+    repoURL: https://git.winteraccess.id/adel/Employee-manifest.git
+    targetRevision: stag
+    path: overlays/stag
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: argocd
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
