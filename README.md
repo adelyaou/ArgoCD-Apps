@@ -11,12 +11,7 @@ the cluster when updates are committed.
 
 ## Repository Structure
 
-ARGO-INSTALL/
-│
-├── applications-dev.yaml # ArgoCD Application for Development environment
-├── applications-stag.yaml # ArgoCD Application for Staging environment
-├── applications-prod.yaml # ArgoCD Application for Production environment
-└── project.yaml # ArgoCD AppProject defining access control rules
+<pre> ``` ARGO-INSTALL/ ├── applications-dev.yaml # ArgoCD Application for Development environment ├── applications-stag.yaml # ArgoCD Application for Staging environment ├── applications-prod.yaml # ArgoCD Application for Production environment └── project.yaml # ArgoCD AppProject defining access control rules ``` </pre>
 
 ## How to Apply the Manifests Manually
 
